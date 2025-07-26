@@ -10,7 +10,7 @@
   <link href="./src/output.css" rel="stylesheet">
 </head>
 
-<body class=" bg-gray-500  max-w-dvw ">
+<body class=" bg-gray-500  ">
 
   <!-- Google Tag Manager (noscript) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NQM5VJ9X" height="0" width="0"
@@ -18,51 +18,818 @@
   <!-- End Google Tag Manager (noscript) -->
 
   <!-- {{-- hadaer --}} -->
-  <!-- Include this script tag or install `@tailwindplus/elements` via npm: -->
-  <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script> -->
-  <nav class="bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700">
+  <header class="sticky top-0 h-[60px] shadow-xl z-30 bg-gray-900/20 lg:px-18 w-full">
+    <!-- El `container` corregido arregla el scroll lateral -->
+    <div class="container mx-auto flex justify-between h-full items-center lg:max-w-7xl w-full">
 
-    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-      <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
-        <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo" />
-        <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
+      <a href="#home" class="flex items-center my-1 bg-white/25 px-2 rounded-xl hover:text-gray-100">
+        <img src="./img/rayanicon2.png" class="w-16 h-14 p-0 m-0" />
+        <p class="text-xl lg:text-3xl font-bold">Hormig<span class="text-red-700">obras</span></p>
       </a>
-      <button data-collapse-toggle="navbar-dropdown" type="button"
-        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-        aria-controls="navbar-dropdown" aria-expanded="false">
-        <span class="sr-only">Open main menu</span>
-        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-            d="M1 1h15M1 7h15M1 13h15" />
-        </svg>
-      </button>
-      <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
-        <ul
-          class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-          <li>
-            <a href="#"
-              class="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent"
-              aria-current="page">Home</a>
-          </li>
 
-          <li>
-            <a href="#"
-              class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Services</a>
-          </li>
-          <li>
-            <a href="#"
-              class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Pricing</a>
-          </li>
-          <li>
-            <a href="#"
-              class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
-          </li>
+      <nav class="px-2">
+
+        <!-- Botón para abrir/cerrar el menú móvil -->
+        <div class="cursor-pointer lg:hidden bg-gray-100 h-10 w-10 rounded-md flex justify-center items-center"
+          id="nav_trigger_btn">
+
+          <!-- Ícono de Hamburguesa (abrir) -->
+          <svg width="35px" height="35px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+            id="nav_menu_icon_open">
+            <path d="M4 6H20M4 12H20M4 18H20" stroke="#000000" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+
+          <!-- Ícono de X (cerrar) -->
+          <svg width="25px" height="25px" viewBox="0 -0.5 21 21" version="1.1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" id="nav_menu_icon_close" class="hidden">
+            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+              <g id="Dribbble-Light-Preview" transform="translate(-419.000000, -240.000000)" fill="#000000">
+                <g id="icons" transform="translate(56.000000, 160.000000)">
+                  <polygon id="close-[#1511]"
+                    points="375.0183 90 384 98.554 382.48065 100 373.5 91.446 364.5183 100 363 98.554 371.98065 90 363 81.446 364.5183 80 373.5 88.554 382.48065 80 384 81.446">
+                  </polygon>
+                </g>
+              </g>
+            </g>
+          </svg>
+        </div>
+
+        <!-- El menú de navegación -->
+        <ul
+          class="fixed w-full h-0 p-0 rounded-lg overflow-hidden top-[60px] left-0 right-0 flex flex-col gap-6 lg:relative lg:flex-row lg:p-0 lg:top-0 lg:border-none lg:h-full transition-all duration-300 text-white text-lg bg-gray-900 lg:bg-transparent px-4"
+          id="nav_menu">
+          <li class="hover:text-amber-600 pt-4 lg:pt-0"><a href="#home">Inicio</a></li>
+          <li class="hover:text-amber-600"><a href="#about">Quienes somos?</a></li>
+          <li class="hover:text-amber-600"><a href="#services">Servicios</a></li>
+          <li class="hover:text-amber-600"><a href="#contact">Contacto</a></li>
         </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- {{--page wraper --}} -->
+  <main class="max-w-[1920px] mx-auto bg-gray-50  translate-y-[-80px] scroll-mt-[60px] " id="home">
+
+
+
+
+    <!-- {{-- HERO--}} -->
+    <section
+      class="hero   hidden h-[640px] xl:h-[840px] bg-hero bg-bottom  lg:bg-cover bg-no-repeat bg-fixed xl:rounded-bl-[290px] lg:block lg:relative z-20 "
+      style="background-image: url(' ./img/bg6-min.webp')">
+
+
+      <div class="container mx-auto h-full flex items-center justify-center xl:justify-start max-w-7xl">
+
+
+        <div
+          class="hero__text w-[667px] flex flex-col items-center text-center xl:text-left lg:items-start bg-gray-900/30 rounded-lg p-2 t-[-80px]">
+          <h1 class="h1 mb-6 text-white font-new  text-6xl"> Provisión de hormigón elaborado y servicio de bombeo de
+            hormigón.
+          </h1>
+          <p class="mb-6 text-gray-100 text-2xl">Venta de Hormigón elaborado H21, H25, H30, y alquiler de bomba de
+            arrastre. Prestamos servicios en Zona Norte, Sur, Este, Oeste y CABA.</p>
+
+          <a href="https://wa.me/+541131315278?text=Hola queria consultar por ...  " target="_blank"
+            class=" btn  mx-auto xl:mx-0  ">Contactanos!
+
+            <svg viewBox="-1.5 0 259 259" class="w-10 h-10" preserveAspectRatio="xMidYMid">
+              <g>
+                <path
+                  d="M67.6631045,221.823373 L71.8484512,223.916047 C89.2873956,234.379413 108.819013,239.262318 128.350631,239.262318 L128.350631,239.262318 C189.735716,239.262318 239.959876,189.038158 239.959876,127.653073 C239.959876,98.3556467 228.101393,69.7557778 207.17466,48.8290445 C186.247927,27.9023111 158.345616,16.0438289 128.350631,16.0438289 C66.9655467,16.0438289 16.7413867,66.2679889 17.4389445,128.350631 C17.4389445,149.277365 23.7169645,169.50654 34.1803311,186.945485 L36.9705622,191.130831 L25.8096378,232.28674 L67.6631045,221.823373 Z"
+                  fill="#00E676">
+
+                </path>
+                <path
+                  d="M219.033142,37.66812 C195.316178,13.2535978 162.530962,0 129.048189,0 C57.8972956,0 0.697557778,57.8972956 1.39511556,128.350631 C1.39511556,150.67248 7.67313556,172.296771 18.1365022,191.828389 L0,258.096378 L67.6631045,240.657433 C86.4971645,251.1208 107.423898,256.003705 128.350631,256.003705 L128.350631,256.003705 C198.803967,256.003705 256.003705,198.106409 256.003705,127.653073 C256.003705,93.4727423 242.750107,61.3850845 219.033142,37.66812 Z M129.048189,234.379413 L129.048189,234.379413 C110.214129,234.379413 91.380069,229.496509 75.3362401,219.7307 L71.1508934,217.638027 L30.6925422,228.101393 L41.1559089,188.3406 L38.3656778,184.155253 C7.67313556,134.628651 22.3218489,69.05822 72.5460089,38.3656778 C122.770169,7.67313556 187.643042,22.3218489 218.335585,72.5460089 C249.028127,122.770169 234.379413,187.643042 184.155253,218.335585 C168.111425,228.798951 148.579807,234.379413 129.048189,234.379413 Z M190.433273,156.9505 L182.760138,153.462711 C182.760138,153.462711 171.599213,148.579807 164.623636,145.092018 C163.926078,145.092018 163.22852,144.39446 162.530962,144.39446 C160.438289,144.39446 159.043173,145.092018 157.648058,145.789576 L157.648058,145.789576 C157.648058,145.789576 156.9505,146.487133 147.184691,157.648058 C146.487133,159.043173 145.092018,159.740731 143.696902,159.740731 L142.999345,159.740731 C142.301787,159.740731 140.906671,159.043173 140.209113,158.345616 L136.721325,156.9505 L136.721325,156.9505 C129.048189,153.462711 122.072611,149.277365 116.492149,143.696902 C115.097033,142.301787 113.00436,140.906671 111.609245,139.511556 C106.72634,134.628651 101.843436,129.048189 98.3556467,122.770169 L97.658089,121.375053 C96.9605312,120.677496 96.9605312,119.979938 96.2629734,118.584822 C96.2629734,117.189707 96.2629734,115.794591 96.9605312,115.097033 C96.9605312,115.097033 99.7507623,111.609245 101.843436,109.516571 C103.238551,108.121456 103.936109,106.028782 105.331225,104.633667 C106.72634,102.540993 107.423898,99.7507623 106.72634,97.658089 C106.028782,94.1703001 97.658089,75.3362401 95.5654156,71.1508934 C94.1703001,69.05822 92.7751845,68.3606623 90.6825112,67.6631045 L88.5898378,67.6631045 C87.1947223,67.6631045 85.1020489,67.6631045 83.0093756,67.6631045 C81.6142601,67.6631045 80.2191445,68.3606623 78.8240289,68.3606623 L78.1264712,69.05822 C76.7313556,69.7557778 75.3362401,71.1508934 73.9411245,71.8484512 C72.5460089,73.2435667 71.8484512,74.6386823 70.4533356,76.0337978 C65.5704312,82.3118178 62.7802,89.9849534 62.7802,97.658089 L62.7802,97.658089 C62.7802,103.238551 64.1753156,108.819013 66.2679889,113.701918 L66.9655467,115.794591 C73.2435667,129.048189 81.6142601,140.906671 92.7751845,151.370038 L95.5654156,154.160269 C97.658089,156.252942 99.7507623,157.648058 101.145878,159.740731 C115.794591,172.296771 132.535978,181.365022 151.370038,186.247927 C153.462711,186.945485 156.252942,186.945485 158.345616,187.643042 L158.345616,187.643042 C160.438289,187.643042 163.22852,187.643042 165.321193,187.643042 C168.808982,187.643042 172.994329,186.247927 175.78456,184.852811 C177.877233,183.457696 179.272349,183.457696 180.667465,182.06258 L182.06258,180.667465 C183.457696,179.272349 184.852811,178.574791 186.247927,177.179676 C187.643042,175.78456 189.038158,174.389445 189.735716,172.994329 C191.130831,170.204098 191.828389,166.716309 192.525947,163.22852 C192.525947,161.833405 192.525947,159.740731 192.525947,158.345616 C192.525947,158.345616 191.828389,157.648058 190.433273,156.9505 Z"
+                  fill="#FFFFFF">
+
+                </path>
+              </g>
+            </svg>
+
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- {{-- mpbile --}} -->
+    <section
+      class="hero    lg:hidden block  h-[520px] xl:h-[840px] bg-hero bg-center  lg:bg-cover bg-no-repeat bg-fixed xl:rounded-bl-[290px] relative  abosulte z-20 top-0 "
+      style="background-image: url('./img/bg6-Mob.webp');background-size:450px 80%;background-position:top">
+
+      <div class="container mx-auto h-full flex items-center justify-center xl:justify-start">
+
+        <div
+          class="hero__text w-[567px] flex flex-col items-center text-center xl:text-left lg:items-start bg-gray-900/30 rounded-lg p-1">
+          <h1 class=" mb-4 text-gray-50 font-new text-2xl"> Provisión de hormigón elaborado y servicio de bombeo de
+            hormigón.</h1>
+          <p class="mb-8  lg:text-xl text-lg text-center text-gray-100">Venta de Hormigón elaborado H21, H25, H30, y
+            alquiler de bomba de arrastre. Prestamos servicios en Zona Norte, Sur, Este, Oeste y CABA.</p>
+
+          <a href="https://wa.me/+541131315278?text=Hola queria consultar por ...  " target="_blank"
+            class="btn btn-primary mx-auto xl:mx-0 hover:text-accent py-0">Contactanos!
+            <svg viewBox="-1.5 0 259 259" class="w-8 h-8" preserveAspectRatio="xMidYMid">
+              <g>
+                <path
+                  d="M67.6631045,221.823373 L71.8484512,223.916047 C89.2873956,234.379413 108.819013,239.262318 128.350631,239.262318 L128.350631,239.262318 C189.735716,239.262318 239.959876,189.038158 239.959876,127.653073 C239.959876,98.3556467 228.101393,69.7557778 207.17466,48.8290445 C186.247927,27.9023111 158.345616,16.0438289 128.350631,16.0438289 C66.9655467,16.0438289 16.7413867,66.2679889 17.4389445,128.350631 C17.4389445,149.277365 23.7169645,169.50654 34.1803311,186.945485 L36.9705622,191.130831 L25.8096378,232.28674 L67.6631045,221.823373 Z"
+                  fill="#00E676">
+
+                </path>
+                <path
+                  d="M219.033142,37.66812 C195.316178,13.2535978 162.530962,0 129.048189,0 C57.8972956,0 0.697557778,57.8972956 1.39511556,128.350631 C1.39511556,150.67248 7.67313556,172.296771 18.1365022,191.828389 L0,258.096378 L67.6631045,240.657433 C86.4971645,251.1208 107.423898,256.003705 128.350631,256.003705 L128.350631,256.003705 C198.803967,256.003705 256.003705,198.106409 256.003705,127.653073 C256.003705,93.4727423 242.750107,61.3850845 219.033142,37.66812 Z M129.048189,234.379413 L129.048189,234.379413 C110.214129,234.379413 91.380069,229.496509 75.3362401,219.7307 L71.1508934,217.638027 L30.6925422,228.101393 L41.1559089,188.3406 L38.3656778,184.155253 C7.67313556,134.628651 22.3218489,69.05822 72.5460089,38.3656778 C122.770169,7.67313556 187.643042,22.3218489 218.335585,72.5460089 C249.028127,122.770169 234.379413,187.643042 184.155253,218.335585 C168.111425,228.798951 148.579807,234.379413 129.048189,234.379413 Z M190.433273,156.9505 L182.760138,153.462711 C182.760138,153.462711 171.599213,148.579807 164.623636,145.092018 C163.926078,145.092018 163.22852,144.39446 162.530962,144.39446 C160.438289,144.39446 159.043173,145.092018 157.648058,145.789576 L157.648058,145.789576 C157.648058,145.789576 156.9505,146.487133 147.184691,157.648058 C146.487133,159.043173 145.092018,159.740731 143.696902,159.740731 L142.999345,159.740731 C142.301787,159.740731 140.906671,159.043173 140.209113,158.345616 L136.721325,156.9505 L136.721325,156.9505 C129.048189,153.462711 122.072611,149.277365 116.492149,143.696902 C115.097033,142.301787 113.00436,140.906671 111.609245,139.511556 C106.72634,134.628651 101.843436,129.048189 98.3556467,122.770169 L97.658089,121.375053 C96.9605312,120.677496 96.9605312,119.979938 96.2629734,118.584822 C96.2629734,117.189707 96.2629734,115.794591 96.9605312,115.097033 C96.9605312,115.097033 99.7507623,111.609245 101.843436,109.516571 C103.238551,108.121456 103.936109,106.028782 105.331225,104.633667 C106.72634,102.540993 107.423898,99.7507623 106.72634,97.658089 C106.028782,94.1703001 97.658089,75.3362401 95.5654156,71.1508934 C94.1703001,69.05822 92.7751845,68.3606623 90.6825112,67.6631045 L88.5898378,67.6631045 C87.1947223,67.6631045 85.1020489,67.6631045 83.0093756,67.6631045 C81.6142601,67.6631045 80.2191445,68.3606623 78.8240289,68.3606623 L78.1264712,69.05822 C76.7313556,69.7557778 75.3362401,71.1508934 73.9411245,71.8484512 C72.5460089,73.2435667 71.8484512,74.6386823 70.4533356,76.0337978 C65.5704312,82.3118178 62.7802,89.9849534 62.7802,97.658089 L62.7802,97.658089 C62.7802,103.238551 64.1753156,108.819013 66.2679889,113.701918 L66.9655467,115.794591 C73.2435667,129.048189 81.6142601,140.906671 92.7751845,151.370038 L95.5654156,154.160269 C97.658089,156.252942 99.7507623,157.648058 101.145878,159.740731 C115.794591,172.296771 132.535978,181.365022 151.370038,186.247927 C153.462711,186.945485 156.252942,186.945485 158.345616,187.643042 L158.345616,187.643042 C160.438289,187.643042 163.22852,187.643042 165.321193,187.643042 C168.808982,187.643042 172.994329,186.247927 175.78456,184.852811 C177.877233,183.457696 179.272349,183.457696 180.667465,182.06258 L182.06258,180.667465 C183.457696,179.272349 184.852811,178.574791 186.247927,177.179676 C187.643042,175.78456 189.038158,174.389445 189.735716,172.994329 C191.130831,170.204098 191.828389,166.716309 192.525947,163.22852 C192.525947,161.833405 192.525947,159.740731 192.525947,158.345616 C192.525947,158.345616 191.828389,157.648058 190.433273,156.9505 Z"
+                  fill="#FFFFFF">
+
+                </path>
+              </g>
+            </svg>
+
+          </a>
+
+        </div>
+
+      </div>
+    </section>
+
+
+
+    <!-- {{-- about --}} -->
+    <section class="about mt-[60px] xl:mt-[200px] relative z-20 scroll-mt-[60px] " id="about">
+      <div class="container mx-auto xl:px-0 max-w-7xl">
+        <div
+          class="flex flex-col xl:flex-row text-center xl:text-left justify-between items-center gap-8 xl:gap-[74px]">
+          <!-- {{-- text --}} -->
+          <div
+            class=" about__text flex-1 order-1 xl:order-none max-w-xl xl:max-w-[410px] flex flex-col items-center xl:items-start lg:gap-8 gap-6 ">
+
+            <h2 class="lg:h2 lg:text-[40px] text-[36px]">QUIÉNES SOMOS?</h2>
+            <p class="lg:text-[18px] text-base">Somos una empresa dedicada a la provisión de hormigón elaborado de
+              primera calidad, brindándote asesoramiento antes y durante la ejecución de tu obra. Contamos con más de 20
+              años de experiencia que nos avala. Nuestro objetivo primordial es satisfacer las necesidades de nuestros
+              clientes, con un acompañamiento constante, una programación organizada y un servicio ágil. Nos encontrás
+              en Zona Norte, Este, Oeste y la Ciudad Autónoma de Buenos Aires.</p>
+
+            <!-- {{-- icon phone--}} -->
+            <div
+              class="flex items-center justify-start xl:justify-start lg:gap-4 gap-1 border-2 border-gray-200 rounded-full pr-2  w-full">
+              <div
+                class="bg-gray-800 lg:w-[93px] lg:h-[93px] w-[60px] h-[60px] rounded-full flex justify-center items-center border">
+                <svg viewBox="-1.5 0 259 259" class="lg:w-12 lg:h-12 w-8 h-8" preserveAspectRatio="xMidYMid">
+                  <g>
+                    <path
+                      d="M67.6631045,221.823373 L71.8484512,223.916047 C89.2873956,234.379413 108.819013,239.262318 128.350631,239.262318 L128.350631,239.262318 C189.735716,239.262318 239.959876,189.038158 239.959876,127.653073 C239.959876,98.3556467 228.101393,69.7557778 207.17466,48.8290445 C186.247927,27.9023111 158.345616,16.0438289 128.350631,16.0438289 C66.9655467,16.0438289 16.7413867,66.2679889 17.4389445,128.350631 C17.4389445,149.277365 23.7169645,169.50654 34.1803311,186.945485 L36.9705622,191.130831 L25.8096378,232.28674 L67.6631045,221.823373 Z"
+                      fill="#00E676">
+                    </path>
+                    <path
+                      d="M219.033142,37.66812 C195.316178,13.2535978 162.530962,0 129.048189,0 C57.8972956,0 0.697557778,57.8972956 1.39511556,128.350631 C1.39511556,150.67248 7.67313556,172.296771 18.1365022,191.828389 L0,258.096378 L67.6631045,240.657433 C86.4971645,251.1208 107.423898,256.003705 128.350631,256.003705 L128.350631,256.003705 C198.803967,256.003705 256.003705,198.106409 256.003705,127.653073 C256.003705,93.4727423 242.750107,61.3850845 219.033142,37.66812 Z M129.048189,234.379413 L129.048189,234.379413 C110.214129,234.379413 91.380069,229.496509 75.3362401,219.7307 L71.1508934,217.638027 L30.6925422,228.101393 L41.1559089,188.3406 L38.3656778,184.155253 C7.67313556,134.628651 22.3218489,69.05822 72.5460089,38.3656778 C122.770169,7.67313556 187.643042,22.3218489 218.335585,72.5460089 C249.028127,122.770169 234.379413,187.643042 184.155253,218.335585 C168.111425,228.798951 148.579807,234.379413 129.048189,234.379413 Z M190.433273,156.9505 L182.760138,153.462711 C182.760138,153.462711 171.599213,148.579807 164.623636,145.092018 C163.926078,145.092018 163.22852,144.39446 162.530962,144.39446 C160.438289,144.39446 159.043173,145.092018 157.648058,145.789576 L157.648058,145.789576 C157.648058,145.789576 156.9505,146.487133 147.184691,157.648058 C146.487133,159.043173 145.092018,159.740731 143.696902,159.740731 L142.999345,159.740731 C142.301787,159.740731 140.906671,159.043173 140.209113,158.345616 L136.721325,156.9505 L136.721325,156.9505 C129.048189,153.462711 122.072611,149.277365 116.492149,143.696902 C115.097033,142.301787 113.00436,140.906671 111.609245,139.511556 C106.72634,134.628651 101.843436,129.048189 98.3556467,122.770169 L97.658089,121.375053 C96.9605312,120.677496 96.9605312,119.979938 96.2629734,118.584822 C96.2629734,117.189707 96.2629734,115.794591 96.9605312,115.097033 C96.9605312,115.097033 99.7507623,111.609245 101.843436,109.516571 C103.238551,108.121456 103.936109,106.028782 105.331225,104.633667 C106.72634,102.540993 107.423898,99.7507623 106.72634,97.658089 C106.028782,94.1703001 97.658089,75.3362401 95.5654156,71.1508934 C94.1703001,69.05822 92.7751845,68.3606623 90.6825112,67.6631045 L88.5898378,67.6631045 C87.1947223,67.6631045 85.1020489,67.6631045 83.0093756,67.6631045 C81.6142601,67.6631045 80.2191445,68.3606623 78.8240289,68.3606623 L78.1264712,69.05822 C76.7313556,69.7557778 75.3362401,71.1508934 73.9411245,71.8484512 C72.5460089,73.2435667 71.8484512,74.6386823 70.4533356,76.0337978 C65.5704312,82.3118178 62.7802,89.9849534 62.7802,97.658089 L62.7802,97.658089 C62.7802,103.238551 64.1753156,108.819013 66.2679889,113.701918 L66.9655467,115.794591 C73.2435667,129.048189 81.6142601,140.906671 92.7751845,151.370038 L95.5654156,154.160269 C97.658089,156.252942 99.7507623,157.648058 101.145878,159.740731 C115.794591,172.296771 132.535978,181.365022 151.370038,186.247927 C153.462711,186.945485 156.252942,186.945485 158.345616,187.643042 L158.345616,187.643042 C160.438289,187.643042 163.22852,187.643042 165.321193,187.643042 C168.808982,187.643042 172.994329,186.247927 175.78456,184.852811 C177.877233,183.457696 179.272349,183.457696 180.667465,182.06258 L182.06258,180.667465 C183.457696,179.272349 184.852811,178.574791 186.247927,177.179676 C187.643042,175.78456 189.038158,174.389445 189.735716,172.994329 C191.130831,170.204098 191.828389,166.716309 192.525947,163.22852 C192.525947,161.833405 192.525947,159.740731 192.525947,158.345616 C192.525947,158.345616 191.828389,157.648058 190.433273,156.9505 Z"
+                      fill="#FFFFFF">
+
+                    </path>
+                  </g>
+                </svg>
+
+              </div>
+              <div class="text-left">
+                <div class="font-bold lg:text-2xl text-lg">11-31315278</div>
+                <div class="lg:text-xl text-base leading-5">Escribinos en cualquier momento!</div>
+              </div>
+            </div>
+            <!-- {{--btn --}} -->
+            <a href="https://wa.me/+541131315278?text=Hola queria cotizar  " target="_blank"
+              class="lg:h-[75px] lg:px-[30px] h-[55px] px-[20px] transition-all duration-300 text-white rounded-[18px] flex items-center gap-2  btn hover:text-accent  ">Obtene
+              tu cotizacion.</a>
+
+
+
+          </div>
+          <!-- {{-- img --}} -->
+          <div class="about__img order-1 lg:order-none max-w-[400px] mx-auto xl:max-w-none xl:mx-0">
+            <img class="w-[650px] rounded-lg rounded-tl-[120px] rounded-br-[120px]" src=" ./img/quienes-min.webp"
+              alt="quienes-somos" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- {{-- testimonial --}} -->
+
+
+    <section class="testimonial mt-[80px] xl:mt-[200px] relative  z-20"
+      style="background-image: url('./img/concrete-wall-min.webp')">
+      <div class="testimonial__bg container mx-auto px-6  ">
+        <!-- {{-- style="background-image: url('concrete-wall.jpg')"> --}} -->
+
+        <div class="flex flex-col items-center pt-[68px] pb-[10px] ">
+          <h2
+            class="testimonial__title lg:text-[45px] lg:leading-tight; lg:mb-9 mb-5 text-center text-yellow-300   leading-none text-4xl font-primary">
+            ¿QUE HORMIGÓN NECESITAS?</h2>
+          <!-- {{-- slider ************************************--}} -->
+          <div class="w-full ** flex ">
+            <div class="testimonial__slider swiper h-[570px] lg:h-[550px] ">
+              <div class="swiper-wrapper">
+                <!-- {{-- slide1 --}} -->
+                <div class="swiper-slide ">
+                  <!-- {{-- item --}} -->
+                  <div
+                    class="testimonial__item w-full max-w-[450px] h-[510px] lg:h-[500px] bg-white rounded-[30px] flex flex-col  justify-center lg:py-3    px-7 py-2 mx-auto border border-red-400">
+
+                    <div class=" flex h-full  mb-3 flex-col justify-between items-center">
+                      <!-- {{-- --}} -->
+
+                      <div class=" h-full">
+
+                        <!-- {{-- helmet --}} -->
+                        <div class="lg:h-[27%] h-[25%] ">
+                          <div
+                            class="md:w-28 md:h-28 w-24 h-24 bg-cover  bg-center bg-no-repeat bg-fixed flex justify-center items-center mx-auto "
+                            style="background-image: url('./img/helmetyel.png')">
+                            <h3 class="text-gray-700 font-bold  text-2xl">H8</h3>
+                          </div>
+                        </div>
+
+                        <!-- {{-- body --}} -->
+                        <div class="lg:h-[65%] h-[67%] ">
+                          <h3 class="lg:mb-2 mb-1 font-semibold text-xl">Usos y caracteristicas</h3>
+                          <h4 class=" lg:mb-4 mb-2 leading-6 text-lg text-gray-800">
+                            Limpieza y nivelación.
+                          </h4>
+
+                          <p class="text-base text-start">
+                            Este es un tipo de hormigón que normalmente es utilizado para limpieza y nivelación, de esta
+                            manera sus usos son para estructuras de hormigón simple. Como por ejemplo cubiertas de
+                            techos, rellenos, veredas, contrapisos alivianados, etc.
+                          </p>
+
+                        </div>
+
+
+                        <div class="h-[8%]  w-full">
+                          <a href="https://wa.me/+541131315278?text=Hola queria consultar por el hormigon "
+                            target="_blank"
+                            class="bg-gray-500 flex rounded-2xl lg:py-1 py-0.5 mx-auto px-4 items-center text-white font-bold hover:shadow-lg hover:text-gray-200 transition-all ease-in-out w-fit"
+                            style="background-image: url('./img/concrete-wall-btn.webp')">
+                            Consultar
+                            <svg width="30px" height="30px" viewBox="0 0 32 32" fill="none"
+                              xmlns="http://www.w3.org/2000/svg" class="ml-2">
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M16 31C23.732 31 30 24.732 30 17C30 9.26801 23.732 3 16 3C8.26801 3 2 9.26801 2 17C2 19.5109 2.661 21.8674 3.81847 23.905L2 31L9.31486 29.3038C11.3014 30.3854 13.5789 31 16 31ZM16 28.8462C22.5425 28.8462 27.8462 23.5425 27.8462 17C27.8462 10.4576 22.5425 5.15385 16 5.15385C9.45755 5.15385 4.15385 10.4576 4.15385 17C4.15385 19.5261 4.9445 21.8675 6.29184 23.7902L5.23077 27.7692L9.27993 26.7569C11.1894 28.0746 13.5046 28.8462 16 28.8462Z"
+                                fill="#BFC8D0" />
+                              <path
+                                d="M28 16C28 22.6274 22.6274 28 16 28C13.4722 28 11.1269 27.2184 9.19266 25.8837L5.09091 26.9091L6.16576 22.8784C4.80092 20.9307 4 18.5589 4 16C4 9.37258 9.37258 4 16 4C22.6274 4 28 9.37258 28 16Z"
+                                fill="url(#paint0_linear_87_7264)" />
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M16 30C23.732 30 30 23.732 30 16C30 8.26801 23.732 2 16 2C8.26801 2 2 8.26801 2 16C2 18.5109 2.661 20.8674 3.81847 22.905L2 30L9.31486 28.3038C11.3014 29.3854 13.5789 30 16 30ZM16 27.8462C22.5425 27.8462 27.8462 22.5425 27.8462 16C27.8462 9.45755 22.5425 4.15385 16 4.15385C9.45755 4.15385 4.15385 9.45755 4.15385 16C4.15385 18.5261 4.9445 20.8675 6.29184 22.7902L5.23077 26.7692L9.27993 25.7569C11.1894 27.0746 13.5046 27.8462 16 27.8462Z"
+                                fill="white" />
+                              <path
+                                d="M12.5 9.49989C12.1672 8.83131 11.6565 8.8905 11.1407 8.8905C10.2188 8.8905 8.78125 9.99478 8.78125 12.05C8.78125 13.7343 9.52345 15.578 12.0244 18.3361C14.438 20.9979 17.6094 22.3748 20.2422 22.3279C22.875 22.2811 23.4167 20.0154 23.4167 19.2503C23.4167 18.9112 23.2062 18.742 23.0613 18.696C22.1641 18.2654 20.5093 17.4631 20.1328 17.3124C19.7563 17.1617 19.5597 17.3656 19.4375 17.4765C19.0961 17.8018 18.4193 18.7608 18.1875 18.9765C17.9558 19.1922 17.6103 19.083 17.4665 19.0015C16.9374 18.7892 15.5029 18.1511 14.3595 17.0426C12.9453 15.6718 12.8623 15.2001 12.5959 14.7803C12.3828 14.4444 12.5392 14.2384 12.6172 14.1483C12.9219 13.7968 13.3426 13.254 13.5313 12.9843C13.7199 12.7145 13.5702 12.305 13.4803 12.05C13.0938 10.953 12.7663 10.0347 12.5 9.49989Z"
+                                fill="white" />
+                              <defs>
+                                <linearGradient id="paint0_linear_87_7264" x1="26.5" y1="7" x2="4" y2="28"
+                                  gradientUnits="userSpaceOnUse">
+                                  <stop stop-color="#5BD066" />
+                                  <stop offset="1" stop-color="#27B43E" />
+                                </linearGradient>
+                              </defs>
+                            </svg>
+
+                          </a>
+                        </div>
+
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+                <!-- {{-- slide2 --}} -->
+                <div class="swiper-slide ">
+                  <!-- {{-- item --}} -->
+                  <div
+                    class="testimonial__item w-full max-w-[450px] h-[510px] lg:h-[500px] bg-white rounded-[30px] flex flex-col  justify-center lg:py-3    px-7 py-2 mx-auto border border-red-400">
+
+                    <div class=" flex h-full  mb-3 flex-col justify-between items-center">
+                      <!-- {{-- --}} -->
+
+                      <div class=" h-full">
+
+                        <!-- {{-- helmet --}} -->
+
+                        <div class="flex  lg:h-[27%] h-[25%] ">
+                          <div
+                            class="md:w-28 md:h-28 w-24 h-24 bg-cover  bg-center bg-no-repeat bg-fixed flex justify-center items-center mx-auto "
+                            style="background-image: url('./img/helmetyel.png')">
+                            <h3 class="text-gray-700 font-bold  text-2xl">H13</h3>
+                          </div>
+                          <div
+                            class="md:w-28 md:h-28 w-24 h-24 bg-cover  bg-center bg-no-repeat bg-fixed flex justify-center items-center mx-auto "
+                            style="background-image: url('./img/helmetyel.png')">
+                            <h3 class="text-gray-700 font-bold  text-2xl">H17</h3>
+                          </div>
+                          <div
+                            class="md:w-28 md:h-28 w-24 h-24 bg-cover  bg-center bg-no-repeat bg-fixed flex justify-center items-center mx-auto "
+                            style="background-image: url('./img/helmetyel.png')">
+                            <h3 class="text-gray-700 font-bold  text-2xl">H21</h3>
+                          </div>
+                        </div>
+
+                        <!-- {{-- body --}} -->
+                        <div class="lg:h-[65%] h-[67%] ">
+                          <h3 class="lg:mb-2 mb-1 font-semibold text-xl">Usos y caracteristicas</h3>
+                          <h4 class=" lg:mb-4 mb-2 leading-6 text-lg text-gray-800">
+                            Construcciones simples y esctructurales.
+                          </h4>
+
+                          <p class="text-base text-start">
+                            Estos tipos de hormigones se utilizan para estructuras de hormigón simple y armado, estas no
+                            deben estar expuestas a la acción de medios agresivos. Son utilizados por ejemplo en plateas
+                            en general, construcción de altura general, encadenados, losas, vigas, capa de compresión,
+                            columnas y tabiques.
+                          </p>
+
+                        </div>
+
+
+                        <div class="h-[8%] ">
+                          <a href="https://wa.me/+541131315278?text=Hola queria consultar por el hormigon "
+                            target="_blank"
+                            class="bg-gray-500 flex rounded-2xl lg:py-1 py-0.5 mx-auto px-4 items-center text-white font-bold hover:shadow-lg hover:text-gray-200 transition-all ease-in-out w-fit"
+                            style="background-image: url('./img/concrete-wall-btn.webp')">
+                            Consultar
+                            <svg width="30px" height="30px" viewBox="0 0 32 32" fill="none"
+                              xmlns="http://www.w3.org/2000/svg" class="ml-2">
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M16 31C23.732 31 30 24.732 30 17C30 9.26801 23.732 3 16 3C8.26801 3 2 9.26801 2 17C2 19.5109 2.661 21.8674 3.81847 23.905L2 31L9.31486 29.3038C11.3014 30.3854 13.5789 31 16 31ZM16 28.8462C22.5425 28.8462 27.8462 23.5425 27.8462 17C27.8462 10.4576 22.5425 5.15385 16 5.15385C9.45755 5.15385 4.15385 10.4576 4.15385 17C4.15385 19.5261 4.9445 21.8675 6.29184 23.7902L5.23077 27.7692L9.27993 26.7569C11.1894 28.0746 13.5046 28.8462 16 28.8462Z"
+                                fill="#BFC8D0" />
+                              <path
+                                d="M28 16C28 22.6274 22.6274 28 16 28C13.4722 28 11.1269 27.2184 9.19266 25.8837L5.09091 26.9091L6.16576 22.8784C4.80092 20.9307 4 18.5589 4 16C4 9.37258 9.37258 4 16 4C22.6274 4 28 9.37258 28 16Z"
+                                fill="url(#paint0_linear_87_7264)" />
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M16 30C23.732 30 30 23.732 30 16C30 8.26801 23.732 2 16 2C8.26801 2 2 8.26801 2 16C2 18.5109 2.661 20.8674 3.81847 22.905L2 30L9.31486 28.3038C11.3014 29.3854 13.5789 30 16 30ZM16 27.8462C22.5425 27.8462 27.8462 22.5425 27.8462 16C27.8462 9.45755 22.5425 4.15385 16 4.15385C9.45755 4.15385 4.15385 9.45755 4.15385 16C4.15385 18.5261 4.9445 20.8675 6.29184 22.7902L5.23077 26.7692L9.27993 25.7569C11.1894 27.0746 13.5046 27.8462 16 27.8462Z"
+                                fill="white" />
+                              <path
+                                d="M12.5 9.49989C12.1672 8.83131 11.6565 8.8905 11.1407 8.8905C10.2188 8.8905 8.78125 9.99478 8.78125 12.05C8.78125 13.7343 9.52345 15.578 12.0244 18.3361C14.438 20.9979 17.6094 22.3748 20.2422 22.3279C22.875 22.2811 23.4167 20.0154 23.4167 19.2503C23.4167 18.9112 23.2062 18.742 23.0613 18.696C22.1641 18.2654 20.5093 17.4631 20.1328 17.3124C19.7563 17.1617 19.5597 17.3656 19.4375 17.4765C19.0961 17.8018 18.4193 18.7608 18.1875 18.9765C17.9558 19.1922 17.6103 19.083 17.4665 19.0015C16.9374 18.7892 15.5029 18.1511 14.3595 17.0426C12.9453 15.6718 12.8623 15.2001 12.5959 14.7803C12.3828 14.4444 12.5392 14.2384 12.6172 14.1483C12.9219 13.7968 13.3426 13.254 13.5313 12.9843C13.7199 12.7145 13.5702 12.305 13.4803 12.05C13.0938 10.953 12.7663 10.0347 12.5 9.49989Z"
+                                fill="white" />
+                              <defs>
+                                <linearGradient id="paint0_linear_87_7264" x1="26.5" y1="7" x2="4" y2="28"
+                                  gradientUnits="userSpaceOnUse">
+                                  <stop stop-color="#5BD066" />
+                                  <stop offset="1" stop-color="#27B43E" />
+                                </linearGradient>
+                              </defs>
+                            </svg>
+
+                          </a>
+                        </div>
+
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+
+
+                <!-- {{-- slide3 --}} -->
+                <div class="swiper-slide ">
+                  <!-- {{-- item --}} -->
+                  <div
+                    class="testimonial__item w-full max-w-[450px] h-[510px] lg:h-[500px] bg-white rounded-[30px] flex flex-col  justify-center lg:py-3    px-7 py-2 mx-auto border border-red-400">
+
+                    <div class=" flex h-full  mb-3 flex-col justify-between items-center">
+                      <!-- {{-- --}} -->
+
+                      <div class=" h-full">
+
+                        <!-- {{-- helmet --}} -->
+
+                        <div class="flex   justify-center lg:h-[27%] h-[25%]">
+                          <div
+                            class="md:w-28 md:h-28 w-24 h-24 bg-cover  bg-center bg-no-repeat bg-fixed flex justify-center items-center  "
+                            style="background-image: url('./img/helmetyel.png')">
+                            <h3 class="text-gray-700 font-bold  text-2xl">H25</h3>
+                          </div>
+                          <div
+                            class="md:w-28 md:h-28 w-24 h-24 bg-cover  bg-center bg-no-repeat bg-fixed flex justify-center items-center  "
+                            style="background-image: url('./img/helmetyel.png')">
+                            <h3 class="text-gray-700 font-bold  text-2xl">H30</h3>
+                          </div>
+
+                        </div>
+
+                        <!-- {{-- body --}} -->
+                        <div class="lg:h-[65%] h-[67%] ">
+                          <h3 class="lg:mb-2 mb-1 font-semibold text-xl">Usos y caracteristicas</h3>
+                          <h4 class=" lg:mb-4 mb-2 leading-6 text-lg text-gray-800">
+                            Contrucciones expuestas a acciones mecánicas y abrasión superficial.
+                          </h4>
+
+                          <p class="text-base text-start">
+                            Se utiliza para estructuras de hormigón simple o armado, estas pueden estar expuestas a
+                            acciones mecánicas y abrasión superficial. Como por ejemplo transito pesado industrial,
+                            pisos industriales de alto impacto, cordón cuneta, pavimentos para pisos industriales.
+                          </p>
+
+                        </div>
+
+
+                        <div class="h-[8%]  w-full">
+                          <a href="https://wa.me/+541131315278?text=Hola queria consultar por el hormigon "
+                            target="_blank"
+                            class="bg-gray-500 flex rounded-2xl lg:py-1 py-0.5 mx-auto px-4 items-center text-white font-bold hover:shadow-lg hover:text-gray-200 transition-all ease-in-out w-fit"
+                            style="background-image: url('./img/concrete-wall-btn.webp')">
+                            Consultar
+                            <svg width="30px" height="30px" viewBox="0 0 32 32" fill="none"
+                              xmlns="http://www.w3.org/2000/svg" class="ml-2">
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M16 31C23.732 31 30 24.732 30 17C30 9.26801 23.732 3 16 3C8.26801 3 2 9.26801 2 17C2 19.5109 2.661 21.8674 3.81847 23.905L2 31L9.31486 29.3038C11.3014 30.3854 13.5789 31 16 31ZM16 28.8462C22.5425 28.8462 27.8462 23.5425 27.8462 17C27.8462 10.4576 22.5425 5.15385 16 5.15385C9.45755 5.15385 4.15385 10.4576 4.15385 17C4.15385 19.5261 4.9445 21.8675 6.29184 23.7902L5.23077 27.7692L9.27993 26.7569C11.1894 28.0746 13.5046 28.8462 16 28.8462Z"
+                                fill="#BFC8D0" />
+                              <path
+                                d="M28 16C28 22.6274 22.6274 28 16 28C13.4722 28 11.1269 27.2184 9.19266 25.8837L5.09091 26.9091L6.16576 22.8784C4.80092 20.9307 4 18.5589 4 16C4 9.37258 9.37258 4 16 4C22.6274 4 28 9.37258 28 16Z"
+                                fill="url(#paint0_linear_87_7264)" />
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M16 30C23.732 30 30 23.732 30 16C30 8.26801 23.732 2 16 2C8.26801 2 2 8.26801 2 16C2 18.5109 2.661 20.8674 3.81847 22.905L2 30L9.31486 28.3038C11.3014 29.3854 13.5789 30 16 30ZM16 27.8462C22.5425 27.8462 27.8462 22.5425 27.8462 16C27.8462 9.45755 22.5425 4.15385 16 4.15385C9.45755 4.15385 4.15385 9.45755 4.15385 16C4.15385 18.5261 4.9445 20.8675 6.29184 22.7902L5.23077 26.7692L9.27993 25.7569C11.1894 27.0746 13.5046 27.8462 16 27.8462Z"
+                                fill="white" />
+                              <path
+                                d="M12.5 9.49989C12.1672 8.83131 11.6565 8.8905 11.1407 8.8905C10.2188 8.8905 8.78125 9.99478 8.78125 12.05C8.78125 13.7343 9.52345 15.578 12.0244 18.3361C14.438 20.9979 17.6094 22.3748 20.2422 22.3279C22.875 22.2811 23.4167 20.0154 23.4167 19.2503C23.4167 18.9112 23.2062 18.742 23.0613 18.696C22.1641 18.2654 20.5093 17.4631 20.1328 17.3124C19.7563 17.1617 19.5597 17.3656 19.4375 17.4765C19.0961 17.8018 18.4193 18.7608 18.1875 18.9765C17.9558 19.1922 17.6103 19.083 17.4665 19.0015C16.9374 18.7892 15.5029 18.1511 14.3595 17.0426C12.9453 15.6718 12.8623 15.2001 12.5959 14.7803C12.3828 14.4444 12.5392 14.2384 12.6172 14.1483C12.9219 13.7968 13.3426 13.254 13.5313 12.9843C13.7199 12.7145 13.5702 12.305 13.4803 12.05C13.0938 10.953 12.7663 10.0347 12.5 9.49989Z"
+                                fill="white" />
+                              <defs>
+                                <linearGradient id="paint0_linear_87_7264" x1="26.5" y1="7" x2="4" y2="28"
+                                  gradientUnits="userSpaceOnUse">
+                                  <stop stop-color="#5BD066" />
+                                  <stop offset="1" stop-color="#27B43E" />
+                                </linearGradient>
+                              </defs>
+                            </svg>
+
+                          </a>
+                        </div>
+
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+
+
+
+
+
+
+
+
+                <!-- {{-- end --}} -->
+
+
+
+              </div>
+            </div>
+
+
+
+
+
+
+
+
+
+            <!-- {{-- --}} -->
+          </div>
+
+          <!-- {{--swiper pagination --}} -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+
+      </div>
+
+
+
+
+      </div>
+
+
+    </section>
+
+
+
+
+
+
+
+    <!-- {{-- work --}} -->
+    <section class="work mt-[80px] xl:mt-[75px] xl:pt-[75px] relative  z-20 scroll-mt-[60px]" id="services">
+      <div class="container mx-auto xl:px-0">
+        <!-- {{-- text --}} -->
+        <div class="text-center lg:mb-24 mb-12">
+          <h2 class="work__title  mb-4 lg:text-[50px] lg:mb-3 text-[29px]">NUESTROS SERVICIOS</h2>
+        </div>
+
+        <!-- {{-- grid --}} -->
+        <div class="work__grid grid grid-cols-1 xl:grid-cols-2 gap-x-[104px] gap-y-[56px] relative pb-2 ">
+          <!-- {{-- item --}} -->
+          <div class="w-full max-w-[548px] h-full mx-auto shadow-lg rounded-b rounded-br-[70px] relative" id="entrega">
+            <img class="mb-6 rounded-br-[100px] rounded-lg rounded-b-none" src="./img/truck1-1.webp" alt="service1">
+            <div class="flex flex-col justify-between items-center w-full  ">
+              <div class="w-full pl-2">
+                <h3 class="text-xl text-gray-800 pl-2 "> Entregas en Obra de Hormigón Elaborado.</h3>
+              </div>
+              <a href="https://wa.me/+541131315278?text=Hola queria consultar por la entra en obra de hormigon elaborado"
+                target="_blank"
+                class=" w-[70px] h-[70px]    lg:absolute    bottom-0 flex justify-center items-center  mb-2">
+                <svg class="w-[50px] h-[50px] hover:h-[60px] hover:w-[60px]" viewBox="0 0 32 32" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M16 31C23.732 31 30 24.732 30 17C30 9.26801 23.732 3 16 3C8.26801 3 2 9.26801 2 17C2 19.5109 2.661 21.8674 3.81847 23.905L2 31L9.31486 29.3038C11.3014 30.3854 13.5789 31 16 31ZM16 28.8462C22.5425 28.8462 27.8462 23.5425 27.8462 17C27.8462 10.4576 22.5425 5.15385 16 5.15385C9.45755 5.15385 4.15385 10.4576 4.15385 17C4.15385 19.5261 4.9445 21.8675 6.29184 23.7902L5.23077 27.7692L9.27993 26.7569C11.1894 28.0746 13.5046 28.8462 16 28.8462Z"
+                    fill="#BFC8D0" />
+                  <path
+                    d="M28 16C28 22.6274 22.6274 28 16 28C13.4722 28 11.1269 27.2184 9.19266 25.8837L5.09091 26.9091L6.16576 22.8784C4.80092 20.9307 4 18.5589 4 16C4 9.37258 9.37258 4 16 4C22.6274 4 28 9.37258 28 16Z"
+                    fill="url(#paint0_linear_87_7264)" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M16 30C23.732 30 30 23.732 30 16C30 8.26801 23.732 2 16 2C8.26801 2 2 8.26801 2 16C2 18.5109 2.661 20.8674 3.81847 22.905L2 30L9.31486 28.3038C11.3014 29.3854 13.5789 30 16 30ZM16 27.8462C22.5425 27.8462 27.8462 22.5425 27.8462 16C27.8462 9.45755 22.5425 4.15385 16 4.15385C9.45755 4.15385 4.15385 9.45755 4.15385 16C4.15385 18.5261 4.9445 20.8675 6.29184 22.7902L5.23077 26.7692L9.27993 25.7569C11.1894 27.0746 13.5046 27.8462 16 27.8462Z"
+                    fill="white" />
+                  <path
+                    d="M12.5 9.49989C12.1672 8.83131 11.6565 8.8905 11.1407 8.8905C10.2188 8.8905 8.78125 9.99478 8.78125 12.05C8.78125 13.7343 9.52345 15.578 12.0244 18.3361C14.438 20.9979 17.6094 22.3748 20.2422 22.3279C22.875 22.2811 23.4167 20.0154 23.4167 19.2503C23.4167 18.9112 23.2062 18.742 23.0613 18.696C22.1641 18.2654 20.5093 17.4631 20.1328 17.3124C19.7563 17.1617 19.5597 17.3656 19.4375 17.4765C19.0961 17.8018 18.4193 18.7608 18.1875 18.9765C17.9558 19.1922 17.6103 19.083 17.4665 19.0015C16.9374 18.7892 15.5029 18.1511 14.3595 17.0426C12.9453 15.6718 12.8623 15.2001 12.5959 14.7803C12.3828 14.4444 12.5392 14.2384 12.6172 14.1483C12.9219 13.7968 13.3426 13.254 13.5313 12.9843C13.7199 12.7145 13.5702 12.305 13.4803 12.05C13.0938 10.953 12.7663 10.0347 12.5 9.49989Z"
+                    fill="white" />
+                  <defs>
+                    <linearGradient id="paint0_linear_87_7264" x1="26.5" y1="7" x2="4" y2="28"
+                      gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#5BD066" />
+                      <stop offset="1" stop-color="#27B43E" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+
+              </a>
+            </div>
+          </div>
+
+          <!-- {{-- item 2--}} -->
+          <div class="w-full max-w-[548px] h-full mx-auto shadow-lg rounded-bl-[70px] relative pb-2" id="alquiler">
+            <img class="mb-6 rounded-bl-[100px] rounded-lg rounded-b-none" src="./img/pump2.webp" alt="service2">
+            <div class="flex flex-col justify-between items-center w-full">
+              <div class="w-full pl-6">
+                <h3 class="text-xl text-gray-800">Alquiler de Bombas de arrastre de hasta 200Mts lineales de cañería.
+                </h3>
+
+              </div>
+
+              <a href="https://wa.me/+541131315278?text=Hola queria consultar por el alquiler de bombas de arrastre "
+                target="_blank" class="  w-[70px] h-[70px] ounded-full flex justify-center items-center mx-auto    ">
+
+
+                <svg class="w-[50px] h-[50px] hover:h-[60px] hover:w-[60px]" viewBox="0 0 32 32" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M16 31C23.732 31 30 24.732 30 17C30 9.26801 23.732 3 16 3C8.26801 3 2 9.26801 2 17C2 19.5109 2.661 21.8674 3.81847 23.905L2 31L9.31486 29.3038C11.3014 30.3854 13.5789 31 16 31ZM16 28.8462C22.5425 28.8462 27.8462 23.5425 27.8462 17C27.8462 10.4576 22.5425 5.15385 16 5.15385C9.45755 5.15385 4.15385 10.4576 4.15385 17C4.15385 19.5261 4.9445 21.8675 6.29184 23.7902L5.23077 27.7692L9.27993 26.7569C11.1894 28.0746 13.5046 28.8462 16 28.8462Z"
+                    fill="#BFC8D0" />
+                  <path
+                    d="M28 16C28 22.6274 22.6274 28 16 28C13.4722 28 11.1269 27.2184 9.19266 25.8837L5.09091 26.9091L6.16576 22.8784C4.80092 20.9307 4 18.5589 4 16C4 9.37258 9.37258 4 16 4C22.6274 4 28 9.37258 28 16Z"
+                    fill="url(#paint0_linear_87_7264)" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M16 30C23.732 30 30 23.732 30 16C30 8.26801 23.732 2 16 2C8.26801 2 2 8.26801 2 16C2 18.5109 2.661 20.8674 3.81847 22.905L2 30L9.31486 28.3038C11.3014 29.3854 13.5789 30 16 30ZM16 27.8462C22.5425 27.8462 27.8462 22.5425 27.8462 16C27.8462 9.45755 22.5425 4.15385 16 4.15385C9.45755 4.15385 4.15385 9.45755 4.15385 16C4.15385 18.5261 4.9445 20.8675 6.29184 22.7902L5.23077 26.7692L9.27993 25.7569C11.1894 27.0746 13.5046 27.8462 16 27.8462Z"
+                    fill="white" />
+                  <path
+                    d="M12.5 9.49989C12.1672 8.83131 11.6565 8.8905 11.1407 8.8905C10.2188 8.8905 8.78125 9.99478 8.78125 12.05C8.78125 13.7343 9.52345 15.578 12.0244 18.3361C14.438 20.9979 17.6094 22.3748 20.2422 22.3279C22.875 22.2811 23.4167 20.0154 23.4167 19.2503C23.4167 18.9112 23.2062 18.742 23.0613 18.696C22.1641 18.2654 20.5093 17.4631 20.1328 17.3124C19.7563 17.1617 19.5597 17.3656 19.4375 17.4765C19.0961 17.8018 18.4193 18.7608 18.1875 18.9765C17.9558 19.1922 17.6103 19.083 17.4665 19.0015C16.9374 18.7892 15.5029 18.1511 14.3595 17.0426C12.9453 15.6718 12.8623 15.2001 12.5959 14.7803C12.3828 14.4444 12.5392 14.2384 12.6172 14.1483C12.9219 13.7968 13.3426 13.254 13.5313 12.9843C13.7199 12.7145 13.5702 12.305 13.4803 12.05C13.0938 10.953 12.7663 10.0347 12.5 9.49989Z"
+                    fill="white" />
+                  <defs>
+                    <linearGradient id="paint0_linear_87_7264" x1="26.5" y1="7" x2="4" y2="28"
+                      gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#5BD066" />
+                      <stop offset="1" stop-color="#27B43E" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+
+              </a>
+            </div>
+          </div>
+
+
+
+
+
+
+        </div>
+      </div>
+
+    </section>
+
+
+
+
+    <!-- {{-- news --}} -->
+    <section class="news mt-[80px] xl:mt-[150px] relative  z-20 ">
+      <div class="container mx-auto px-0">
+        <!-- {{-- text --}} -->
+        <div class="max-w-[810px] mx-auto text-center lg:mb-[52px] mb-[42px]">
+          <h2 class="news__title lg:text-[50px] lg:mb-3  mb-2 text-[29px] text-gray-800">NUESTROS PROYECTOS</h2>
+          <p class="news__subtitle px-2 text-xl">
+            Imágenes de algunos de nuestros proyectos realizados.
+          </p>
+        </div>
+
+
+        <!-- {{-- grid --}} -->
+        <div class="news__grid grid grid-cols-1 xl:grid-cols-3 gap-[27px]">
+
+          <!-- {{-- grid item --}} -->
+          <div
+            class="news__item w-full max-w-[382px] h-[380px] border border-primary/20 rounded-[62px] rounded-b-lg p-[20px] over:bg-accent-secondary transition-all group cursor-pointe mx-auto xl_mx-0  shadow-lg">
+            <img class="mb-6 rounded-t-[62px] w-[500px] h-[330px] rounded-b-md" src="./img/n1.png" alt="project1">
+          </div>
+
+          <!-- {{-- grid item 2--}} -->
+          <div
+            class="news__item w-full max-w-[382px] h-[380px] border border-primary/20 rounded-[62px] rounded-b-lg p-[20px] over:bg-accent-secondary transition-all group cursor-pointe mx-auto xl_mx-0  shadow-lg over:shadow-xl">
+            <img class="mb-6 rounded-t-[62px] w-[500px] h-[330px] rounded-b-md" src="./img/n2.png" alt="project1">
+          </div>
+
+          <!-- {{-- grid item 3 --}} -->
+          <div
+            class="news__item w-full max-w-[382px] h-[380px] border border-primary/20 rounded-[62px] rounded-b-lg p-[20px] over:bg-accent-secondary transition-all group cursor-pointe mx-auto xl_mx-0  shadow-lg  over:shadow-xl">
+            <img class="mb-6 rounded-t-[62px] w-[500px] h-[330px] rounded-b-md" src="./img/n3.png" alt="project1">
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+
+
+
+  </main>
+
+
+  <!-- {{-- footer --}} -->
+  <footer
+    class="footer  mt-[40px] xl:mt-[100px] relative  z-20  pt-4 bg-gradient-to-r from-neutral-600 to-stone-700 text-gray-200"
+    id="contact">
+    <!-- {{-- <footer
+      class="footer  mt-[40px] xl:mt-[100px] relative  z-20  pt-4 bg-gradient-to-r from-neutral-300 to-stone-400"
+      id="contact"> --}} -->
+    <div class="container mx-auto px-0 ">
+      <div class="flex flex-col  xl:flex-row xl:gap-[100px] xl:mb-[50px]  lg:shadow-none shadow-lg">
+
+        <div
+          class="footer__item w-full max-w-[400px] mx-auto mb-4 pb-10 text-center xl:text-left shadow-md lg:shadow-none flex flex-col-reverse lg:flex-col">
+
+          <div>
+
+            <p class="mb-4  text-center text-2xl text-accent">Encontranos!</p>
+            <!-- {{-- socialsl --}} -->
+            <ul class="text-primary flex gap-[54px] justify-center   ">
+              <li>
+                <a href="">
+                  <svg width="40px" height="40px" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="2" y="2" width="28" height="28" rx="6" fill="url(#paint0_radial_87_7153)" />
+                    <rect x="2" y="2" width="28" height="28" rx="6" fill="url(#paint1_radial_87_7153)" />
+                    <rect x="2" y="2" width="28" height="28" rx="6" fill="url(#paint2_radial_87_7153)" />
+                    <path
+                      d="M23 10.5C23 11.3284 22.3284 12 21.5 12C20.6716 12 20 11.3284 20 10.5C20 9.67157 20.6716 9 21.5 9C22.3284 9 23 9.67157 23 10.5Z"
+                      fill="white" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M16 21C18.7614 21 21 18.7614 21 16C21 13.2386 18.7614 11 16 11C13.2386 11 11 13.2386 11 16C11 18.7614 13.2386 21 16 21ZM16 19C17.6569 19 19 17.6569 19 16C19 14.3431 17.6569 13 16 13C14.3431 13 13 14.3431 13 16C13 17.6569 14.3431 19 16 19Z"
+                      fill="white" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M6 15.6C6 12.2397 6 10.5595 6.65396 9.27606C7.2292 8.14708 8.14708 7.2292 9.27606 6.65396C10.5595 6 12.2397 6 15.6 6H16.4C19.7603 6 21.4405 6 22.7239 6.65396C23.8529 7.2292 24.7708 8.14708 25.346 9.27606C26 10.5595 26 12.2397 26 15.6V16.4C26 19.7603 26 21.4405 25.346 22.7239C24.7708 23.8529 23.8529 24.7708 22.7239 25.346C21.4405 26 19.7603 26 16.4 26H15.6C12.2397 26 10.5595 26 9.27606 25.346C8.14708 24.7708 7.2292 23.8529 6.65396 22.7239C6 21.4405 6 19.7603 6 16.4V15.6ZM15.6 8H16.4C18.1132 8 19.2777 8.00156 20.1779 8.0751C21.0548 8.14674 21.5032 8.27659 21.816 8.43597C22.5686 8.81947 23.1805 9.43139 23.564 10.184C23.7234 10.4968 23.8533 10.9452 23.9249 11.8221C23.9984 12.7223 24 13.8868 24 15.6V16.4C24 18.1132 23.9984 19.2777 23.9249 20.1779C23.8533 21.0548 23.7234 21.5032 23.564 21.816C23.1805 22.5686 22.5686 23.1805 21.816 23.564C21.5032 23.7234 21.0548 23.8533 20.1779 23.9249C19.2777 23.9984 18.1132 24 16.4 24H15.6C13.8868 24 12.7223 23.9984 11.8221 23.9249C10.9452 23.8533 10.4968 23.7234 10.184 23.564C9.43139 23.1805 8.81947 22.5686 8.43597 21.816C8.27659 21.5032 8.14674 21.0548 8.0751 20.1779C8.00156 19.2777 8 18.1132 8 16.4V15.6C8 13.8868 8.00156 12.7223 8.0751 11.8221C8.14674 10.9452 8.27659 10.4968 8.43597 10.184C8.81947 9.43139 9.43139 8.81947 10.184 8.43597C10.4968 8.27659 10.9452 8.14674 11.8221 8.0751C12.7223 8.00156 13.8868 8 15.6 8Z"
+                      fill="white" />
+                    <defs>
+                      <radialGradient id="paint0_radial_87_7153" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+                        gradientTransform="translate(12 23) rotate(-55.3758) scale(25.5196)">
+                        <stop stop-color="#B13589" />
+                        <stop offset="0.79309" stop-color="#C62F94" />
+                        <stop offset="1" stop-color="#8A3AC8" />
+                      </radialGradient>
+                      <radialGradient id="paint1_radial_87_7153" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+                        gradientTransform="translate(11 31) rotate(-65.1363) scale(22.5942)">
+                        <stop stop-color="#E0E8B7" />
+                        <stop offset="0.444662" stop-color="#FB8A2E" />
+                        <stop offset="0.71474" stop-color="#E2425C" />
+                        <stop offset="1" stop-color="#E2425C" stop-opacity="0" />
+                      </radialGradient>
+                      <radialGradient id="paint2_radial_87_7153" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+                        gradientTransform="translate(0.500002 3) rotate(-8.1301) scale(38.8909 8.31836)">
+                        <stop offset="0.156701" stop-color="#406ADC" />
+                        <stop offset="0.467799" stop-color="#6A45BE" />
+                        <stop offset="1" stop-color="#6A45BE" stop-opacity="0" />
+                      </radialGradient>
+                    </defs>
+                  </svg>
+
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <svg width="40px" height="40px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <g id="Color-" transform="translate(-200.000000, -160.000000)" fill="#4460A0">
+                        <path
+                          d="M225.638355,208 L202.649232,208 C201.185673,208 200,206.813592 200,205.350603 L200,162.649211 C200,161.18585 201.185859,160 202.649232,160 L245.350955,160 C246.813955,160 248,161.18585 248,162.649211 L248,205.350603 C248,206.813778 246.813769,208 245.350955,208 L233.119305,208 L233.119305,189.411755 L239.358521,189.411755 L240.292755,182.167586 L233.119305,182.167586 L233.119305,177.542641 C233.119305,175.445287 233.701712,174.01601 236.70929,174.01601 L240.545311,174.014333 L240.545311,167.535091 C239.881886,167.446808 237.604784,167.24957 234.955552,167.24957 C229.424834,167.24957 225.638355,170.625526 225.638355,176.825209 L225.638355,182.167586 L219.383122,182.167586 L219.383122,189.411755 L225.638355,189.411755 L225.638355,208 L225.638355,208 Z"
+                          id="Facebook">
+                        </path>
+                      </g>
+                    </g>
+                  </svg>
+
+                </a>
+              </li>
+              <li>
+                <a href="https://wa.me/+541131315278?text=Hola " target="_blank">
+                  <svg width="40px" height="40px" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M16 31C23.732 31 30 24.732 30 17C30 9.26801 23.732 3 16 3C8.26801 3 2 9.26801 2 17C2 19.5109 2.661 21.8674 3.81847 23.905L2 31L9.31486 29.3038C11.3014 30.3854 13.5789 31 16 31ZM16 28.8462C22.5425 28.8462 27.8462 23.5425 27.8462 17C27.8462 10.4576 22.5425 5.15385 16 5.15385C9.45755 5.15385 4.15385 10.4576 4.15385 17C4.15385 19.5261 4.9445 21.8675 6.29184 23.7902L5.23077 27.7692L9.27993 26.7569C11.1894 28.0746 13.5046 28.8462 16 28.8462Z"
+                      fill="#BFC8D0" />
+                    <path
+                      d="M28 16C28 22.6274 22.6274 28 16 28C13.4722 28 11.1269 27.2184 9.19266 25.8837L5.09091 26.9091L6.16576 22.8784C4.80092 20.9307 4 18.5589 4 16C4 9.37258 9.37258 4 16 4C22.6274 4 28 9.37258 28 16Z"
+                      fill="url(#paint0_linear_87_7264)" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M16 30C23.732 30 30 23.732 30 16C30 8.26801 23.732 2 16 2C8.26801 2 2 8.26801 2 16C2 18.5109 2.661 20.8674 3.81847 22.905L2 30L9.31486 28.3038C11.3014 29.3854 13.5789 30 16 30ZM16 27.8462C22.5425 27.8462 27.8462 22.5425 27.8462 16C27.8462 9.45755 22.5425 4.15385 16 4.15385C9.45755 4.15385 4.15385 9.45755 4.15385 16C4.15385 18.5261 4.9445 20.8675 6.29184 22.7902L5.23077 26.7692L9.27993 25.7569C11.1894 27.0746 13.5046 27.8462 16 27.8462Z"
+                      fill="white" />
+                    <path
+                      d="M12.5 9.49989C12.1672 8.83131 11.6565 8.8905 11.1407 8.8905C10.2188 8.8905 8.78125 9.99478 8.78125 12.05C8.78125 13.7343 9.52345 15.578 12.0244 18.3361C14.438 20.9979 17.6094 22.3748 20.2422 22.3279C22.875 22.2811 23.4167 20.0154 23.4167 19.2503C23.4167 18.9112 23.2062 18.742 23.0613 18.696C22.1641 18.2654 20.5093 17.4631 20.1328 17.3124C19.7563 17.1617 19.5597 17.3656 19.4375 17.4765C19.0961 17.8018 18.4193 18.7608 18.1875 18.9765C17.9558 19.1922 17.6103 19.083 17.4665 19.0015C16.9374 18.7892 15.5029 18.1511 14.3595 17.0426C12.9453 15.6718 12.8623 15.2001 12.5959 14.7803C12.3828 14.4444 12.5392 14.2384 12.6172 14.1483C12.9219 13.7968 13.3426 13.254 13.5313 12.9843C13.7199 12.7145 13.5702 12.305 13.4803 12.05C13.0938 10.953 12.7663 10.0347 12.5 9.49989Z"
+                      fill="white" />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <a href="#home">
+            <img src="./img/rayanicon2.png"
+              class="lg:w-36 lg:h-36 w-24 h-24 mx-auto lg:mt-8 mt-1 mb-4 bg-gray-300 rounded-full p-1" />
+          </a>
+        </div>
+
+        <div class="flex-1 flex flex-col xl:flex-row text-center xl:text-left gap-4 xl:gap-[100px] xl:justify-end ">
+          <div class="footer__item shadow-md pb-12 lg:shadow-none lg:border-l  lg:pl-4  border-neutral-500">
+            <h3 class="h3 mb-3  lg:mt-0 text-accent">Pagina</h3>
+            <ul class="flex flex-col gap-4 text-[15px] ">
+              <li><a href="#home" class=" text-base">Inicio</a></li>
+              <li><a href="#services" class="text-base">Servicios </a></li>
+              <li><a href="#quienes" class="text-[15px]">Quienes Somos?</a></li>
+              <!-- {{-- <li><a href="#contact" class="text-[15px]">Contacto}</a></li> --}} -->
+            </ul>
+          </div>
+
+          <div class="footer__item shadow-md pb-12 lg:shadow-none lg:border-l  lg:pl-4  border-neutral-500">
+            <h3 class="h3 mb-3 text-accent">Servicios</h3>
+            <ul class="flex flex-col gap-4 text-[15px]">
+              <li><a href="#services" class="text-[15px]">Hormigón en Obra</a></li>
+              <li><a href="#services" class="text-[15px]">Alquiler de Bomba </a></li>
+              <!-- {{-- <li><a href="" class="text-[15px]">Vibrador para concreto</a></li>
+              <li><a href="" class="text-[15px]">Control de Obras</a></li> --}} -->
+            </ul>
+          </div>
+
+          <div class="footer__item shadow-lg pb-12 lg:shadow-none mb-2 lg:border-l  lg:pl-4  border-neutral-500">
+            <h3 class="h3 mb-3 text-accent">Contacto</h3>
+            <ul class="flex flex-col gap-4 text-[15px]">
+              <li>
+                <p>Maestra Clorinda Munzón 481, Bella Vista, Buenos Aires.</p>
+              </li>
+              <li>
+                <p>contact@info.com</p>
+              </li>
+              <li>
+                <p>11-3131-5278</p>
+              </li>
+            </ul>
+          </div>
+
+
+
+        </div>
       </div>
     </div>
-  </nav>
+    <!-- {{-- copyright --}} -->
+    <a href="https://wa.me/+541162841353?text=Hola queria consultar por un sistema "
+      class="footer__copyright text-center lg:text-lg text-base py-10 bg-gradient-to-r from-neutral-300 to-stone-400 lg:border-t xl:border-gray-500 w-full  text-gray-800 flex lg:flex-row flex-col  items-center justify-center hover:text-black ">
 
+      <p>
+        Copyright <b>&copy; Cima-Dev</b> Todos los derechos reservados.
+      </p>
+      <svg width="20px" height="20px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+        <rect x="0" fill="none" width="20" height="20" />
+        <g>
+          <path
+            d="M16.8 5.7C14.4 2 9.5.9 5.7 3.2 2 5.5.8 10.5 3.2 14.2l.2.3-.8 3 3-.8.3.2c1.3.7 2.7 1.1 4.1 1.1 1.5 0 3-.4 4.3-1.2 3.7-2.4 4.8-7.3 2.5-11.1zm-2.1 7.7c-.4.6-.9 1-1.6 1.1-.4 0-.9.2-2.9-.6-1.7-.8-3.1-2.1-4.1-3.6-.6-.7-.9-1.6-1-2.5 0-.8.3-1.5.8-2 .2-.2.4-.3.6-.3H7c.2 0 .4 0 .5.4.2.5.7 1.7.7 1.8.1.1.1.3 0 .4.1.2 0 .4-.1.5-.1.1-.2.3-.3.4-.2.1-.3.3-.2.5.4.6.9 1.2 1.4 1.7.6.5 1.2.9 1.9 1.2.2.1.4.1.5-.1s.6-.7.8-.9c.2-.2.3-.2.5-.1l1.6.8c.2.1.4.2.5.3.1.3.1.7-.1 1z" />
+        </g>
+      </svg>
+
+    </a>
+  </footer>
+
+
+  <script src="./asset/js/swiper-bundle.min.js"></script>
+  <script src="./asset/js/scrollreveal.min.js"></script>
   <script src="./asset/js/main.js"></script>
+
 </body>
 
 </html>
