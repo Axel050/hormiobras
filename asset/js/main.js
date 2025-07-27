@@ -1,9 +1,9 @@
-console.log("sss")
+// console.log("sss")
 document.addEventListener("DOMContentLoaded", function () {
   const toggleButton = document.querySelector('[data-collapse-toggle="navbar-dropdown"]');
   const menu = document.getElementById("navbar-dropdown");
   // console.log(toggleButton)
-  console.log(menu)
+  // console.log(menu)
 
   toggleButton.addEventListener("click", () => {
     menu.classList.toggle("hidden");
@@ -23,44 +23,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   });
 });
-
-
-// const navTriggerBtn = document.querySelector("#nav_trigger_btn");
-
-// navTriggerBtn.addEventListener("click", () => {
-//   navMenu.classList.toggle('nav-is-open');
-
-// })
-
-
-
-
-
-// navMenuIconClose.addEventListener('click', () => {
-//   console.log("fff")
-//   menuIconClose.classList.add('hidden');
-//   menuIconOpen.classList.remove('hidden');
-//   navMenu.classList.remove('open'); // Elimina la clase para ocultar el menú
-// });
-
-// 1. Seleccionar los elementos del DOM una sola vez
-
-// const navTriggerBtn = document.querySelector("#nav_trigger_btn");
-// const navMenu = document.querySelector("#nav_menu");
-// const navMenuIconOpen = document.querySelector("#nav_menu_icon_open");
-// const navMenuIconClose = document.querySelector("#nav_menu_icon_close");
-
-// // 2. Añadir un único evento de clic al botón principal
-// navTriggerBtn.addEventListener("click", () => {
-//   // Alternar la visibilidad del menú
-//   // Quita y pone h-0 y p-0 para que el menú aparezca y desaparezca
-//   navMenu.classList.toggle('h-0');
-//   navMenu.classList.toggle('p-0');
-
-//   // Alternar los íconos de hamburguesa y 'X'
-//   navMenuIconOpen.classList.toggle('hidden');
-//   navMenuIconClose.classList.toggle('hidden');
-// });
 
 
 // swipper
@@ -106,7 +68,7 @@ sr.reveal('.steps__step', { distance: '100px', interval: '100' })
 
 sr.reveal('.about__text', { origin: 'left' })
 
-// sr.reveal('.about__img', { origin: 'right', delay: 800 })
+sr.reveal('.about__img', { origin: 'right', delay: 800, distance: "-60px" })
 
 // // testimonail
 sr.reveal('.testimonial__bg', { delay: 800 })
