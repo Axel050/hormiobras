@@ -23,24 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
 // })
 
 
-const menuIconOpen = document.getElementById('nav_menu_icon_open');
-const menuIconClose = document.getElementById('nav_menu_icon_close');
-// const navMenu = document.getElementById('nav_menu');
-// 
-// Mostrar el ícono "X" y ocultar el ícono SVG al hacer clic
-menuIconOpen.addEventListener('click', () => {
-  menuIconOpen.classList.add('hidden');
-  menuIconClose.classList.remove('hidden');
-  navMenu.classList.add('open'); // Agrega una clase para mostrar el menú
-});
 
-// Mostrar el ícono SVG y ocultar el texto "X" al hacer clic nuevamente
-// const navMenuIconClose =document.querySelector("#nav_menu_icon_close");
-menuIconClose.addEventListener('click', () => {
-  menuIconClose.classList.add('hidden');
-  menuIconOpen.classList.remove('hidden');
-  navMenu.classList.remove('open'); // Elimina la clase para ocultar el menú
-});
 
 
 // navMenuIconClose.addEventListener('click', () => {
@@ -51,22 +34,23 @@ menuIconClose.addEventListener('click', () => {
 // });
 
 // 1. Seleccionar los elementos del DOM una sola vez
-const navTriggerBtn = document.querySelector("#nav_trigger_btn");
-const navMenu = document.querySelector("#nav_menu");
-const navMenuIconOpen = document.querySelector("#nav_menu_icon_open");
-const navMenuIconClose = document.querySelector("#nav_menu_icon_close");
 
-// 2. Añadir un único evento de clic al botón principal
-navTriggerBtn.addEventListener("click", () => {
-  // Alternar la visibilidad del menú
-  // Quita y pone h-0 y p-0 para que el menú aparezca y desaparezca
-  navMenu.classList.toggle('h-0');
-  navMenu.classList.toggle('p-0');
+// const navTriggerBtn = document.querySelector("#nav_trigger_btn");
+// const navMenu = document.querySelector("#nav_menu");
+// const navMenuIconOpen = document.querySelector("#nav_menu_icon_open");
+// const navMenuIconClose = document.querySelector("#nav_menu_icon_close");
 
-  // Alternar los íconos de hamburguesa y 'X'
-  navMenuIconOpen.classList.toggle('hidden');
-  navMenuIconClose.classList.toggle('hidden');
-});
+// // 2. Añadir un único evento de clic al botón principal
+// navTriggerBtn.addEventListener("click", () => {
+//   // Alternar la visibilidad del menú
+//   // Quita y pone h-0 y p-0 para que el menú aparezca y desaparezca
+//   navMenu.classList.toggle('h-0');
+//   navMenu.classList.toggle('p-0');
+
+//   // Alternar los íconos de hamburguesa y 'X'
+//   navMenuIconOpen.classList.toggle('hidden');
+//   navMenuIconClose.classList.toggle('hidden');
+// });
 
 
 // swipper
