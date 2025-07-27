@@ -428,8 +428,14 @@
   .h-\[540px\] {
     height: 540px;
   }
+  .h-\[560px\] {
+    height: 560px;
+  }
   .h-\[570px\] {
     height: 570px;
+  }
+  .h-\[580px\] {
+    height: 580px;
   }
   .h-\[640px\] {
     height: 640px;
@@ -858,6 +864,9 @@
   }
   .pb-3 {
     padding-bottom: calc(var(--spacing) * 3);
+  }
+  .pb-4 {
+    padding-bottom: calc(var(--spacing) * 4);
   }
   .pb-6 {
     padding-bottom: calc(var(--spacing) * 6);
