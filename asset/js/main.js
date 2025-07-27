@@ -3,19 +3,29 @@ document.addEventListener("DOMContentLoaded", function () {
   const toggleButton = document.querySelector('[data-collapse-toggle="navbar-dropdown"]');
   const menu = document.getElementById("navbar-dropdown");
   // console.log(toggleButton)
-  // console.log(menu)
+  console.log(menu)
 
   toggleButton.addEventListener("click", () => {
     menu.classList.toggle("hidden");
+
+    const navMenu = document.querySelector("#x");
+    // const navMenuIconOpen = document.querySelector("#nav_menu_icon_open");
+    // const navMenuIconClose = document.querySelector("#nav_menu_icon_close");
+
+
+    navMenu.addEventListener("click", () => {
+      // navMenu.classList.toggle('nav-is-open');
+      menu.classList.add("hidden");
+
+    })
+
+
+
   });
 });
 
 
 // const navTriggerBtn = document.querySelector("#nav_trigger_btn");
-// const navMenu = document.querySelector("#nav_menu");
-// const navMenuIconOpen = document.querySelector("#nav_menu_icon_open");
-// const navMenuIconClose = document.querySelector("#nav_menu_icon_close");
-
 
 // navTriggerBtn.addEventListener("click", () => {
 //   navMenu.classList.toggle('nav-is-open');
