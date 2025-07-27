@@ -1,14 +1,14 @@
 console.log("aaa")
-// document.addEventListener("DOMContentLoaded", function () {
-//   const toggleButton = document.querySelector('[data-collapse-toggle="navbar-dropdown"]');
-//   const menu = document.getElementById("navbar-dropdown");
-//   console.log(toggleButton)
-//   console.log(menu)
+document.addEventListener("DOMContentLoaded", function () {
+  const toggleButton = document.querySelector('[data-collapse-toggle="navbar-dropdown"]');
+  const menu = document.getElementById("navbar-dropdown");
+  console.log(toggleButton)
+  console.log(menu)
 
-//   toggleButton.addEventListener("click", () => {
-//     menu.classList.toggle("hidden");
-//   });
-// });
+  toggleButton.addEventListener("click", () => {
+    menu.classList.toggle("hidden");
+  });
+});
 
 
 // const navTriggerBtn = document.querySelector("#nav_trigger_btn");
