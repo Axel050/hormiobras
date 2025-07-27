@@ -2,8 +2,8 @@ console.log("aaa")
 document.addEventListener("DOMContentLoaded", function () {
   const toggleButton = document.querySelector('[data-collapse-toggle="navbar-dropdown"]');
   const menu = document.getElementById("navbar-dropdown");
-  console.log(toggleButton)
-  console.log(menu)
+  // console.log(toggleButton)
+  // console.log(menu)
 
   toggleButton.addEventListener("click", () => {
     menu.classList.toggle("hidden");
@@ -96,9 +96,9 @@ sr.reveal('.steps__step', { distance: '100px', interval: '100' })
 
 sr.reveal('.about__text', { origin: 'left' })
 
-sr.reveal('.about__img', { origin: 'right', delay: 800 })
+// sr.reveal('.about__img', { origin: 'right', delay: 800 })
 
-// testimonail
+// // testimonail
 sr.reveal('.testimonial__bg', { delay: 800 })
 
 sr.reveal('.testimonial__title')
@@ -106,29 +106,29 @@ sr.reveal('.testimonial__title')
 sr.reveal('.testimonial__slider', { delay: 1000 })
 
 
-// brand
+// // brand
 sr.reveal('.brands__img', { delay: 600, distance: '100px', interval: 100 })
 
-// work
+// // work
 
 sr.reveal('.work__title')
 sr.reveal('.work__subtitle', { delay: 800 })
 sr.reveal('.work__grid', { delay: 1000 })
 
-// stats
+// // stats
 sr.reveal('.stats')
 sr.reveal('.stats__item', { distance: '100px', inteval: 100 })
 
-// news
+// // news
 sr.reveal('.news__title')
 sr.reveal('.news__subtitle', { delay: 800 })
 sr.reveal('.news__item', { distance: '100px', inteval: 400, delay: 1000 })
 
-// contact
+// // contact
 sr.reveal('.contact__container')
 sr.reveal('.contact__text', { delay: 800 })
 
-// footer
+// // footer
 sr.reveal('.footer__item', { distance: '100px', inteval: 100 })
 sr.reveal('.footer__copyright')
 
